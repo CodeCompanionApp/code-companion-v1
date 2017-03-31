@@ -25,6 +25,8 @@ For now lessons will be simple, that is HTML (text and image) based, but future 
 
 ## App Design / Appearance
 
+<img src="/_mockups/app.png" width="586" height="447">
+
 - Looks like a regular desktop app for the system it's running on.
 - Home / main view; list of available lessons (large thumbnail style?)
 - Lesson view
