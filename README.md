@@ -1,6 +1,6 @@
 # Code Companion
 
-Code Companion is an open source desktop application that interactively teaches you how to code. Taking advantage of it's access to your local filesystem it provides real-time, responsive, and intelligent feedback while you follow along with the it's lessons. Instead of watching videos or using 'fake' terminals and editros, Code Companion helps you learn with the real thing, acting as a sort of virtual teacher and assistant along the way.
+Code Companion is an open source desktop application that interactively teaches you how to code. Taking advantage of it's access to your local filesystem it provides real-time, responsive, and intelligent feedback while you follow along with the it's lessons. Instead of watching videos or using 'fake' terminals and editors, Code Companion helps you learn with the real thing, acting as a sort of virtual teacher and assistant along the way.
 
 Using the Code Companion Lesson API content creators can write lessons that help users get started with just about any kind of technology or programming language. The API allows them to write in a simple (TBD) format.
 
