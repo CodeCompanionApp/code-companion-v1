@@ -60,8 +60,7 @@ Interactivity could take several forms;
 		- an app is started
 		- user starts a server
 		- opens an ssh connection or runs another command (?? can we know that)
-		- fancier conditions like
-	- Feels like this is a big one! Lots to explore here.
+		- Feels like this is a big one! Lots to explore here! 🔥
 - Proactive Help:
 	- Make suggestions when errors are seen in code (have a way to heuristically determine common mistakes or errors for example, or run code through a validator/linter?)
 	- Run code against a test suite in BG as a way of helping the user complete a task
