@@ -2,8 +2,14 @@
   "name": "code-companion",
   "version": "0.1.0",
   "description": "An Electron-based Desktop application for learning code and technical skills.",
-  "main": "index.js",
+  "main": "src/main.js",
   "repository": "git@github.com:hamstu/code-companion.git",
   "author": "Hamish Macpherson <hamstu@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+  	"start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^1.6.2"
+  }
 }
