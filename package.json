@@ -1,0 +1,9 @@
+{
+  "name": "code-companion",
+  "version": "0.1.0",
+  "description": "An Electron-based Desktop application for learning code and technical skills.",
+  "main": "index.js",
+  "repository": "git@github.com:hamstu/code-companion.git",
+  "author": "Hamish Macpherson <hamstu@gmail.com>",
+  "license": "MIT"
+}
