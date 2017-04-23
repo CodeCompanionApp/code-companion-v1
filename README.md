@@ -4,6 +4,10 @@ Code Companion is an open source desktop application that interactively teaches 
 
 Using the Code Companion Lesson API, content creators can write lessons that help users get started with just about any kind of technology or programming language. The API allows them to write in a simple (TBD) format.
 
+## Super Exciting WIP Screenshot 😂
+
+![](/_mockups/screenshot.png)
+
 ## Development
 
 To run the Electron app locally, first clone this repository, then:
