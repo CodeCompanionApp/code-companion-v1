@@ -1,0 +1,48 @@
+.app {
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	width: 100%;
+	color: #fff;
+	padding: 15px 20px;
+	font-size: 1.5em;
+	font-weight: 300;
+	background: #43cea2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+	.header span {
+		font-weight: 600;
+	}
+
+.main {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+}
+.sidebar {
+	flex: 1;
+	max-width: 200px;
+	flex-basis: 300px;
+	padding: 15px;
+	background: #f3f3f3;
+}
+.content {
+	flex: 1;
+	padding: 15px;
+}
+
+.footer {
+	border-top: 1px solid #ddd;
+	background: #fff;
+	padding: 8px 12px;
+	color: #888;
+	font-size: 12px;
+}
+.footer a {
+	color: #2196F3;
+	text-decoration: none;
+}

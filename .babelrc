@@ -1,0 +1,26 @@
+{
+  "presets": [
+    ["env", {
+      "targets": { "electron": 1.6 }
+    }],
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "add-module-exports"//,
+    //"dynamic-import-webpack"
+  ],
+  "env": {
+    //"production": {
+    //  "presets": ["react-optimize"],
+    //  "plugins": ["babel-plugin-dev-expression"]
+    //},
+    "development": {
+      "plugins": [
+        "transform-class-properties",
+        "transform-es2015-classes",
+        "react-hot-loader/babel"
+      ]
+    }
+  }
+}

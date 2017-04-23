@@ -2,3 +2,4 @@
 node_modules
 *.graffle
 *.swp
+dist/bundle.js

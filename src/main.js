@@ -1,35 +1,36 @@
-const { app, BrowserWindow } = require('electron');
-const path = require('path');
-const url = require('url');
+const { app, BrowserWindow } = require("electron");
+const path = require("path");
+const url = require("url");
 
 let mainWindow;
 
 const createWindow = () => {
-  mainWindow = new BrowserWindow({width: 800, height: 600});
+	mainWindow = new BrowserWindow({ width: 800, height: 600, show: false });
 
-  mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
-    protocol: 'file:',
-    slashes: true
-  }));
+	mainWindow.loadURL("http://localhost:8080/");
 
-  // mainWindow.webContents.openDevTools();
+	//mainWindow.webContents.openDevTools();
 
-  mainWindow.on('closed', () => {
-    mainWindow = null;
-  });
-}
+	mainWindow.on("closed", () => {
+		mainWindow = null;
+	});
 
-app.on('ready', createWindow);
+	mainWindow.on("ready-to-show", () => {
+		mainWindow.show();
+		mainWindow.focus();
+	});
+};
 
-app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit();
-  }
+app.on("ready", createWindow);
+
+app.on("window-all-closed", () => {
+	if (process.platform !== "darwin") {
+		app.quit();
+	}
 });
 
-app.on('activate', () => {
-  if (mainWindow === null) {
-    createWindow();
-  }
+app.on("activate", () => {
+	if (mainWindow === null) {
+		createWindow();
+	}
 });
