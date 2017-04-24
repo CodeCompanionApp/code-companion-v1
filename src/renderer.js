@@ -12,8 +12,6 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-console.log("sds");
-
 // Hot Module Replacement
 if (module.hot) {
   module.hot.accept("./containers/App/App", () => {

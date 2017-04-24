@@ -8,13 +8,14 @@ const { spawn } = require("child_process");
 var spawnedElectronApp = null;
 
 const startElectronApp = () => {
-	return spawnedElectronApp = spawn(
-		'npm', ['run', 'electron'],
-		{ shell: true, env: process.env, stdio: 'inherit' }
-	)
-	.on('close', code => process.exit(code))
-	.on('error', spawnError => console.error(spawnError));
-}
+	return (spawnedElectronApp = spawn("npm", ["run", "electron"], {
+		shell: true,
+		env: process.env,
+		stdio: "inherit"
+	})
+		.on("close", code => process.exit(code))
+		.on("error", spawnError => console.error(spawnError)));
+};
 
 const compiler = webpack(config, (err, stats) => {
 	console.log(stats.toString({ colors: true }));
